@@ -1,0 +1,70 @@
+!!coin.Parameters
+verbosity: 3
+iteration: 32
+entityIteration: 100
+hasEntityModel: false
+charDimension: 0
+wordDimension: 200
+posDimension: 25
+depDimension: 25
+labelDimension: 25
+h0dimension: 25
+h1dimension: 100
+h2dimension: 100
+h3dimension: 100
+h4dimension: 100
+minWordFrequency: 2
+minDepFrequency: 0
+clipThreshold: 10
+minibatch: 1
+lstmLayers: 1
+idropout: 0.5
+hdropout: 0.0
+h2dropout: 0.0
+odropout: 0.3
+entityOdropout: 0.3
+unkWordProb: 0.01
+unkDepProb: 0.01
+lambda: 1e-5
+epsilon: 1e-6
+rho: 0.95
+eta0: 0.001
+etaDecay: 0
+forgetBias: -1.0
+entitySchedulingK: 10.0
+schedulingK: 10.0
+gradientScale: 1.0
+clippingEnabled: true
+doNER: true
+doRE: true
+stackSeq: true
+stackTree: false
+useReverseRel: true
+useBase: false
+usePairExp: true
+useRelExp: false
+useSpExp: false
+useSpTreeExp: true
+useSpFullTreeExp: false
+testIteration: 32
+w2vFile: dict/wikipedia200.bin
+fixPretrained: false
+trainDirectory: data/ace2005/corpus/train+dev/
+testDirectory: data/ace2005/corpus/test/
+modelFile: models/ace2005-test.txt
+entityModelFile: models/ace2005-entity-test.txt
+textExtension: .split.txt
+annotationExtension: .split.ann
+predictionExtension: .split.pred.ann
+parseParameters:
+  STANFORD:
+    sentenceTag: sentence
+    extension: .split.stanford.so
+    headAttributeType: null
+    baseAttributeType: base
+    idAttributeType: id
+    posAttributeType: pos
+    predicateAttributeType: null
+    tokenTag: tok
+    tokenFeatureAttributeTypes: [pos]
+baseParser: STANFORD
