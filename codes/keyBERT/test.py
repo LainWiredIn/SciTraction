@@ -51,8 +51,8 @@ all-MiniLM-L12-v2 -- modern, recommended version of the above
 
 all-mpnet-base-v2 -- best 
 """
-# model = SentenceTransformer('all-MiniLM-L12-v2')
-model = SentenceTransformer('all-mpnet-base-v2')
+model = SentenceTransformer('all-MiniLM-L12-v2')
+# model = SentenceTransformer('all-mpnet-base-v2')
 # file_pairs = get_file_names("/home/aneesh/UbuntuStorage/Homework/INLP/SciTraction/SemEvalData/scienceie2017_dev/dev")   # [text, annotation]
 # file_pairs = get_file_names("./data/scienceie2017_dev/dev")   # [text, annotation]
 file_pairs = get_file_names("./data/scienceie2017_train/train2")   # [text, annotation]
